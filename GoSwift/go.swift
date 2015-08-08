@@ -485,3 +485,9 @@ public func _case<T>(l : Chan<T>, file : StaticString = __FILE__, line : UInt = 
 public func _default(file : StaticString = __FILE__, line : UInt = __LINE__, closure:()->()) {
     goapp.routine().default_(file, line: line, closure: closure)
 }
+public func fetch<T>(l : Chan<T>, file : StaticString = __FILE__, line : UInt = __LINE__, closure:(msg : T?, ok : Bool)->()) {
+    _case(l, file: file, line: line, closure: closure)
+}
+public func otherwise(file : StaticString = __FILE__, line : UInt = __LINE__, closure:()->()) {
+    _default(file, line: line, closure: closure)
+}
