@@ -4,7 +4,6 @@ Pod::Spec.new do |s|
   s.summary      = "Go Goodies for Swift. Including goroutines, channels, defer, and panic."
   s.homepage     = "https://github.com/tidwall/GoSwift"
   s.license      = { :type => "Attribution License", :file => "LICENSE" }
-  s.source       = { :git => "https://github.com/Alphasite/GoSwift.git", :branch => 'alt-names' }
   s.authors      = { 'Josh Baker' => 'joshbaker77@gmail.com' }
   s.social_media_url   = "https://twitter.com/tidwall"
   s.ios.platform  = :ios, '8.0'
